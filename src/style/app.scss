@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.App {
+  //   width: 100vw;
+}
+
+// ------------ DETAILS LINES ----------
+
+.lines {
+  display: block;
+  width: 1px;
+  height: 100vh;
+  background-color: #e0e0e0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  z-index: -2;
+}
+.right-line-1 {
+  transform: translateX(300px);
+  -webkit-transform: translateX(300px);
+}
+.right-line-2 {
+  transform: translateX(600px);
+  -webkit-transform: translateX(600px);
+}
+.right-line-3 {
+  transform: translateX(900px);
+  -webkit-transform: translateX(900px);
+}
+.left-line-1 {
+  transform: translateX(-300px);
+  -webkit-transform: translateX(-300px);
+}
+.left-line-2 {
+  transform: translateX(-600px);
+  -webkit-transform: translateX(-600px);
+}
+.left-line-3 {
+  transform: translateX(-900px);
+  -webkit-transform: translateX(-900px);
+}
