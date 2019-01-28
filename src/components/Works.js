@@ -28,8 +28,8 @@ class Works extends Component {
                 </a>
               </p>
               <p>
-                ○ Site personnel de Maëva Carriere - Jusriste. <br />○
-                Utilisation de React.js
+                <span>○</span> Site personnel de Maëva Carriere - Jusriste.{' '}
+                <br />○ Utilisation de React.js
               </p>
               <p>
                 <a href="howstheweather.netlify.com">
@@ -37,8 +37,8 @@ class Works extends Component {
                 </a>
               </p>
               <p>
-                ○ Application web météo. <br />○ Utilisation de React.js, API de
-                OpenWeatherMap.
+                <span>○</span> Application web météo. <br />○ Utilisation de
+                React.js, API de OpenWeatherMap.
               </p>
               <p>
                 <a href="kevinbarfleur.github.io/blog-template">
@@ -46,9 +46,9 @@ class Works extends Component {
                 </a>
               </p>
               <p>
-                ○ Développement d’un microblog avec CMS intégré. <br />○ En
-                développement, mobiles et tablettes non pris en charge. <br /> ○
-                Utilisation de React.js, Firebase, React Quill.
+                <span>○</span> Développement d’un microblog avec CMS intégré.{' '}
+                <br />○ En développement, mobiles et tablettes non pris en
+                charge. <br /> ○ Utilisation de React.js, Firebase, React Quill.
               </p>
             </div>
           </Col>
@@ -61,11 +61,12 @@ class Works extends Component {
               <p>
                 Stage Juillet - Août 2018 :<br />
                 <br />
-                ○ Intégration de PSD au format HTML et CSS.
+                <span>○</span> Intégration de PSD au format HTML et CSS.
                 <br />
-                ○ Maintenance de projets Joomla!
+                <span>○</span> Maintenance de projets Joomla!
                 <br />
-                ○ Configuration et maintenance de projets Prestashop.
+                <span>○</span> Configuration et maintenance de projets
+                Prestashop.
                 <br />○ Initiation à Bootstrap.
               </p>
             </div>

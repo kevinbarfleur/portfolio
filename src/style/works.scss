@@ -60,13 +60,17 @@
 // -------- WORKS ----------
 .worksContent {
   margin-bottom: 200px;
+  justify-content: center;
+}
+
+.tile {
+  min-width: 375px;
 }
 
 .tile div {
   background-color: white;
   box-shadow: 0px 5px 20px lightgrey;
-  margin: 5%;
-  padding: 7%;
+  min-width: 325px;
 
   h4 {
     color: $mainBlue;
@@ -88,18 +92,36 @@
   p {
     color: $lightBlue;
     font-style: italic;
+
+    span {
+      font-style: none;
+    }
   }
 }
 
 .tile .projets {
-  height: 89%;
+  height: 580px;
+  margin: 5% auto;
+  padding: 5%;
 }
 
 .wrapTile {
-  .experieces {
-    height: 60%;
+  .experiences {
+    margin: 5% auto;
+    padding: 5%;
+    height: 50%;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      margin: 5% auto;
+    }
   }
   .autres {
-    height: 35%;
+    margin: 5% auto;
+    padding: 5%;
+    height: 235px;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      margin: 10% auto;
+    }
   }
 }
