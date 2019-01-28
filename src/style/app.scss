@@ -5,6 +5,10 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .App {
   //   width: 100vw;
 }
@@ -21,7 +25,12 @@
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
-  z-index: -2;
+  z-index: -10;
+
+  // MOBILES
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
 }
 .right-line-1 {
   transform: translateX(300px);

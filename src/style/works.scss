@@ -1,0 +1,105 @@
+@import 'variables';
+
+.worksTitle {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  margin: 150px 0 50px 0;
+
+  .blueSquare {
+    z-index: -1;
+    position: absolute;
+
+    top: -9px;
+    left: -100%;
+
+    width: 230%;
+    height: 100%;
+    background-color: $mainBlue;
+
+    // MOBILES
+    @media (min-width: 320px) and (max-width: 767px) {
+      width: 180%;
+    }
+  }
+
+  .line {
+    height: 3px;
+    width: 220px;
+    background-color: white;
+    position: absolute;
+    top: 115px;
+    left: 260px;
+
+    // MOBILES
+    @media (min-width: 320px) and (max-width: 767px) {
+      top: 75px;
+      left: 140px;
+    }
+  }
+
+  // MOBILES
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 90vw;
+  }
+
+  h2 {
+    margin-left: 25px;
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      font-size: 1.5em;
+      margin-left: 0px;
+    }
+  }
+}
+
+// -------- WORKS ----------
+.worksContent {
+  margin-bottom: 200px;
+}
+
+.tile div {
+  background-color: white;
+  box-shadow: 0px 5px 20px lightgrey;
+  margin: 5%;
+  padding: 7%;
+
+  h4 {
+    color: $mainBlue;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 10%;
+  }
+
+  a {
+    font-weight: bold;
+    color: $mainBlack;
+    transition: 0.4s;
+
+    &:visited {
+      color: $mainBlack;
+    }
+  }
+
+  p {
+    color: $lightBlue;
+    font-style: italic;
+  }
+}
+
+.tile .projets {
+  height: 89%;
+}
+
+.wrapTile {
+  .experieces {
+    height: 60%;
+  }
+  .autres {
+    height: 35%;
+  }
+}

@@ -1,10 +1,11 @@
 @import 'variables';
 
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  margin-top: 10%;
 }
 
 // ----------- Left Top Name -----------
@@ -14,15 +15,10 @@
   top: 50px;
   left: 100px;
 
-  // MOBILES
-  @media (min-width: 320px) and (max-width: 767px) {
-    top: 10px;
-    left: 30px;
-  }
-
   p {
     color: $mainBlack;
     font-size: 1.2em;
+    margin-bottom: 0;
 
     // MOBILES
     @media (min-width: 320px) and (max-width: 767px) {
@@ -57,22 +53,25 @@
   }
 
   h1 {
+    color: $mainBlack;
     text-align: left;
     font-size: 3em;
     font-weight: 900;
 
     // MOBILES
     @media (min-width: 320px) and (max-width: 767px) {
+      width: 360px;
       font-size: 1.5em;
     }
   }
 
   .rec-large {
+    z-index: 1;
     background-color: $mainBlue;
     height: 150px;
     width: 620px;
     position: absolute;
-    top: -45px;
+    top: -65px;
     left: -80px;
     z-index: -1;
 
@@ -80,7 +79,7 @@
     @media (min-width: 320px) and (max-width: 767px) {
       height: 80px;
       width: 280px;
-      top: -30px;
+      top: -35px;
       left: -15px;
     }
   }
@@ -104,13 +103,13 @@
 // ------------- Intro -------------
 
 .intro {
-  width: 700px;
+  //   width: 700px;
   margin-top: 50px;
   color: $lightBlue;
 
   // MOBILES
   @media (min-width: 320px) and (max-width: 767px) {
-    width: 320px;
+    // width: 85vw;
     margin-top: 50px;
   }
 }
@@ -119,22 +118,30 @@
 
 .objectifs {
   margin-top: 100px;
-  position: relative;
-  float: right;
+
+  h2 {
+    color: $mainBlack;
+    margin-bottom: 50px;
+    text-align: right;
+  }
+
+  p {
+    color: $lightBlue;
+  }
 
   .line {
     height: 3px;
     width: 120px;
     background-color: $mainBlack;
     position: absolute;
-    top: 30px;
-    left: -140px;
+    top: 125px;
+    left: 20px;
 
     // MOBILES
     @media (min-width: 320px) and (max-width: 767px) {
-      width: 70px;
-      top: 15px;
-      left: -100px;
+      width: 120px;
+      top: 113px;
+      left: 30px;
     }
   }
 
