@@ -95,8 +95,13 @@ class WorksTilesTemplate extends Component {
                   Github et codepen :
                 </p>
                 <p>
-                  <a href="github.com/kevinbarfleur">Github</a> <br />
-                  <a href="codepen.io/kevin_barfleur">Codepen</a>
+                  <a href="https://github.com/kevinbarfleur" target="_blank">
+                    Github
+                  </a>{' '}
+                  <br />
+                  <a href="https://codepen.io/kevin_barfleur" target="_blank">
+                    Codepen
+                  </a>
                 </p>
               </div>
             </WorksTile>
