@@ -1,15 +1,31 @@
 import React, { Component } from 'react'
+import { Container, Row, Col } from 'reactstrap'
 
 import About from './About'
+import Works from './Works'
 
 //styles
 import '../style/app.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 class App extends Component {
+  state = {
+    windowWidth: window.innerWidth
+  }
+
+  componentWillMount() {
+    this.getWindowDimensions()
+  }
+
+  getWindowDimensions = () => {
+    window.addEventListener('resize', event => {
+      this.setState({ windowWidth: window.innerWidth })
+    })
+  }
+
   render() {
     return (
-      <div className="App">
+      <Container className="App">
         <div className="detail-lines">
           <div className="left-line-1 lines" />
           <div className="left-line-2 lines" />
@@ -20,8 +36,13 @@ class App extends Component {
           <div className="right-line-3 lines" />
         </div>
 
-        <About />
-      </div>
+        <Row>
+          <Col>
+            <About />
+            <Works windowWidth={this.state.windowWidth} />
+          </Col>
+        </Row>
+      </Container>
     )
   }
 }

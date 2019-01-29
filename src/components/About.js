@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Container, Row, Col } from 'reactstrap'
-import Works from './Works'
 
 // style
 import '../style/about.scss'
@@ -71,8 +70,6 @@ class About extends Component {
             </div>
           </Col>
         </Row>
-
-        <Works />
       </Container>
     )
   }
