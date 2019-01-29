@@ -31,7 +31,11 @@ class WorksTilesTemplate extends Component {
               <div className="projets">
                 <h4>PROJETS</h4>
                 <p>
-                  <a href="https://maevacarriere.netlify.com" target="_blank">
+                  <a
+                    href="https://maevacarriere.netlify.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     maevacarriere.netlify.com
                   </a>
                 </p>
@@ -40,7 +44,11 @@ class WorksTilesTemplate extends Component {
                   <br />○ Utilisation de React.js
                 </p>
                 <p>
-                  <a href="https://howstheweather.netlify.com" target="_blank">
+                  <a
+                    href="https://howstheweather.netlify.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     howstheweather.netlify.com
                   </a>
                 </p>
@@ -52,6 +60,7 @@ class WorksTilesTemplate extends Component {
                   <a
                     href="https://kevinbarfleur.github.io/blog-template"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     kevinbarfleur.github.io/blog-template
                   </a>
@@ -70,7 +79,11 @@ class WorksTilesTemplate extends Component {
               <div className="experiences">
                 <h4>EXPÉRIENCES</h4>
                 <p>
-                  <a href="https://www.agwanet.com/" target="_blank">
+                  <a
+                    href="https://www.agwanet.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Agwanet
                   </a>
                 </p>
@@ -95,11 +108,19 @@ class WorksTilesTemplate extends Component {
                   Github et codepen :
                 </p>
                 <p>
-                  <a href="https://github.com/kevinbarfleur" target="_blank">
+                  <a
+                    href="https://github.com/kevinbarfleur"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Github
                   </a>{' '}
                   <br />
-                  <a href="https://codepen.io/kevin_barfleur" target="_blank">
+                  <a
+                    href="https://codepen.io/kevin_barfleur"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Codepen
                   </a>
                 </p>
