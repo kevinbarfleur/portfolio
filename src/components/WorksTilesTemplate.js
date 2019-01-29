@@ -19,7 +19,6 @@ const Tile = posed.div({
 class WorksTilesTemplate extends Component {
   render() {
     const isVisible = this.props.tiles_isOpen
-    console.log(this.props)
 
     return (
       <TilesContainer ref="worksTiles" pose={isVisible ? 'open' : 'closed'}>

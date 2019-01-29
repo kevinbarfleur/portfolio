@@ -1,0 +1,43 @@
+@import 'variables';
+
+// .Skills {
+//   overflow-x: hidden;
+// }
+
+.skillsTitle {
+  position: relative;
+
+  h2 {
+    color: $mainBlack;
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      font-size: 1.5em;
+      margin-left: 0px;
+    }
+  }
+
+  .rec-large {
+    z-index: -1;
+    background-color: $mainBlue;
+    height: 60px;
+    width: 300%;
+    position: absolute;
+    top: -30px;
+    left: -50px;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      height: 30px;
+      top: -15px;
+      left: 0px;
+    }
+  }
+}
+
+.skillsTile {
+  min-width: 375px;
+  //   min-width: 80%;
+}

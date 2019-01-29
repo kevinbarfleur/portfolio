@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import { Row, Col } from 'reactstrap'
 
 import About from './About'
 import Works from './Works'
+import Skills from './Skills'
 
 //styles
 import '../style/app.scss'
@@ -25,7 +26,7 @@ class App extends Component {
 
   render() {
     return (
-      <Container className="App">
+      <div className="App">
         <div className="detail-lines">
           <div className="left-line-1 lines" />
           <div className="left-line-2 lines" />
@@ -40,9 +41,10 @@ class App extends Component {
           <Col>
             <About />
             <Works windowWidth={this.state.windowWidth} />
+            <Skills />
           </Col>
         </Row>
-      </Container>
+      </div>
     )
   }
 }

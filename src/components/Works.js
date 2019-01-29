@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col } from 'reactstrap'
+import { Row, Col, Container } from 'reactstrap'
 // import posed from 'react-pose'
 import TrackVisibility from 'react-on-screen'
 import WorksTilesTemplate from './WorksTilesTemplate'
@@ -37,7 +37,9 @@ class Works extends Component {
             </div>
           </Col>
         </Row>
-        <TrackVisibility partialVisibility>{TilesView}</TrackVisibility>
+        <Container>
+          <TrackVisibility partialVisibility>{TilesView}</TrackVisibility>
+        </Container>
       </div>
     )
   }
