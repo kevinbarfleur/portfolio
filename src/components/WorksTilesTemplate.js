@@ -31,7 +31,7 @@ class WorksTilesTemplate extends Component {
               <div className="projets">
                 <h4>PROJETS</h4>
                 <p>
-                  <a href="maevacarriere.netlify.com">
+                  <a href="https://maevacarriere.netlify.com" target="_blank">
                     maevacarriere.netlify.com
                   </a>
                 </p>
@@ -40,7 +40,7 @@ class WorksTilesTemplate extends Component {
                   <br />○ Utilisation de React.js
                 </p>
                 <p>
-                  <a href="howstheweather.netlify.com">
+                  <a href="https://howstheweather.netlify.com" target="_blank">
                     howstheweather.netlify.com
                   </a>
                 </p>
@@ -49,7 +49,10 @@ class WorksTilesTemplate extends Component {
                   React.js, API de OpenWeatherMap.
                 </p>
                 <p>
-                  <a href="kevinbarfleur.github.io/blog-template">
+                  <a
+                    href="https://kevinbarfleur.github.io/blog-template"
+                    target="_blank"
+                  >
                     kevinbarfleur.github.io/blog-template
                   </a>
                 </p>
@@ -67,7 +70,9 @@ class WorksTilesTemplate extends Component {
               <div className="experiences">
                 <h4>EXPÉRIENCES</h4>
                 <p>
-                  <a href="https://www.agwanet.com/">Agwanet</a>
+                  <a href="https://www.agwanet.com/" target="_blank">
+                    Agwanet
+                  </a>
                 </p>
                 <p>
                   Stage Juillet - Août 2018 :<br />
