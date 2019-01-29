@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Row, Col, Container } from 'reactstrap'
-// import posed from 'react-pose'
 import TrackVisibility from 'react-on-screen'
 import WorksTilesTemplate from './WorksTilesTemplate'
 
@@ -9,7 +8,7 @@ import '../style/works.scss'
 
 class Works extends Component {
   render() {
-    const TilesView = ({ isVisible }) => {
+    const WorksTilesView = ({ isVisible }) => {
       const windowWidth = this.props.windowWidth
 
       if (isVisible && windowWidth < 400) {
@@ -38,7 +37,7 @@ class Works extends Component {
           </Col>
         </Row>
         <Container>
-          <TrackVisibility partialVisibility>{TilesView}</TrackVisibility>
+          <TrackVisibility partialVisibility>{WorksTilesView}</TrackVisibility>
         </Container>
       </div>
     )

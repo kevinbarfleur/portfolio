@@ -1,8 +1,8 @@
 @import 'variables';
 
-// .Skills {
-//   overflow-x: hidden;
-// }
+.Skills {
+  margin-bottom: 100px;
+}
 
 .skillsTitle {
   position: relative;
@@ -30,14 +30,54 @@
     left: -50px;
 
     @media (min-width: 320px) and (max-width: 767px) {
-      height: 30px;
-      top: -15px;
-      left: 0px;
+      height: 100px;
+      top: -85px;
+      left: 70px;
     }
   }
 }
 
 .skillsTile {
   min-width: 375px;
-  //   min-width: 80%;
+  margin: auto;
+}
+
+.skillsTile div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  box-shadow: 0px 5px 20px lightgrey;
+  min-width: 325px;
+  min-height: 380px;
+  margin: 5% auto;
+  padding: 5%;
+  text-align: center;
+
+  img {
+    width: 70px;
+  }
+
+  h4 {
+    color: $mainBlack;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 5% auto;
+  }
+
+  p {
+    color: $lightBlue;
+    font-style: italic;
+
+    span {
+      font-style: none;
+    }
+  }
+
+  .skillIntro {
+    color: $mainBlack;
+    font-style: normal;
+  }
 }

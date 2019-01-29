@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Row, Col } from 'reactstrap'
 import posed from 'react-pose'
 
-const TilesContainer = posed.div({
+const WorksTilesContainer = posed.div({
   open: {
     x: '0%',
     delayChildren: 400,
@@ -11,7 +11,7 @@ const TilesContainer = posed.div({
   closed: { x: '-100%', delay: 100 }
 })
 
-const Tile = posed.div({
+const WorksTile = posed.div({
   open: { y: 0, opacity: 1 },
   closed: { y: 20, opacity: 0 }
 })
@@ -21,10 +21,13 @@ class WorksTilesTemplate extends Component {
     const isVisible = this.props.tiles_isOpen
 
     return (
-      <TilesContainer ref="worksTiles" pose={isVisible ? 'open' : 'closed'}>
+      <WorksTilesContainer
+        ref="worksTiles"
+        pose={isVisible ? 'open' : 'closed'}
+      >
         <Row className="worksContent">
           <Col className="tile" xs="6">
-            <Tile>
+            <WorksTile>
               <div className="projets">
                 <h4>PROJETS</h4>
                 <p>
@@ -57,10 +60,10 @@ class WorksTilesTemplate extends Component {
                   Quill.
                 </p>
               </div>
-            </Tile>
+            </WorksTile>
           </Col>
           <Col className="tile wrapTile" xs="6">
-            <Tile>
+            <WorksTile>
               <div className="experiences">
                 <h4>EXPÉRIENCES</h4>
                 <p>
@@ -78,8 +81,8 @@ class WorksTilesTemplate extends Component {
                   <br />○ Initiation à Bootstrap.
                 </p>
               </div>
-            </Tile>
-            <Tile>
+            </WorksTile>
+            <WorksTile>
               <div className="autres">
                 <h4>AUTRES</h4>
                 <p>
@@ -91,10 +94,10 @@ class WorksTilesTemplate extends Component {
                   <a href="codepen.io/kevin_barfleur">Codepen</a>
                 </p>
               </div>
-            </Tile>
+            </WorksTile>
           </Col>
         </Row>
-      </TilesContainer>
+      </WorksTilesContainer>
     )
   }
 }

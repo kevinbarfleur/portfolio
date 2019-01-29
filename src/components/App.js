@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   getWindowDimensions = () => {
-    window.addEventListener('resize', event => {
+    window.addEventListener('resize', () => {
       this.setState({ windowWidth: window.innerWidth })
     })
   }
@@ -41,7 +41,7 @@ class App extends Component {
           <Col>
             <About />
             <Works windowWidth={this.state.windowWidth} />
-            <Skills />
+            <Skills windowWidth={this.state.windowWidth} />
           </Col>
         </Row>
       </div>
