@@ -14,6 +14,16 @@ body {
   width: 100vw;
 }
 
+.mainContainer {
+  opacity: 0;
+
+  animation-name: mainAppearance;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 // ------------ DETAILS LINES ----------
 
 .lines {
@@ -56,4 +66,15 @@ body {
 .left-line-3 {
   transform: translateX(-900px);
   -webkit-transform: translateX(-900px);
+}
+
+// --------- Animations ---------
+
+@keyframes mainAppearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

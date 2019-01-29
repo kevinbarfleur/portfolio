@@ -38,7 +38,7 @@ class App extends Component {
         </div>
 
         <Row>
-          <Col>
+          <Col className="mainContainer">
             <About />
             <Works windowWidth={this.state.windowWidth} />
             <Skills windowWidth={this.state.windowWidth} />
