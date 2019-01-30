@@ -42,55 +42,50 @@ const TitleTracked = ({ isVisible }) => {
 class Contact extends Component {
   render() {
     return (
-      <React.Fragment>
-        <div className="ContactBackground">
-          <Row className="contactContent">
-            <Col xs="6">
-              <div className="informations">
-                <TrackVisibility partialVisibility>
-                  <TitleTracked />
-                </TrackVisibility>
-                <p>
-                  <a
-                    className="important"
-                    href="https://kevinbarfleur.netlify.com"
-                  >
-                    kevinbarfleur.netlify.com
-                  </a>{' '}
-                  <br />
-                  <a href="https://github.com/kevinbarfleur">
-                    github.com/kevinbarfleur
-                  </a>
-                  <br />
-                  <a href="https://codepen.io/kevin_barfleur">
-                    codepen.io/kevin_barfleur
-                  </a>
-                  <br />
-                </p>
-                <p className="me">
-                  <a
-                    className="important"
-                    href="mailto:kevinbarfleur@gmail.com"
-                  >
-                    kevinbarfleur@gmail.com
-                  </a>{' '}
-                  —{' '}
-                  <a className="important" href="tel:+33768123058">
-                    0768.12.30.58
-                  </a>{' '}
-                  — 92160, Antony <br />
-                  27 ans — Permis B.
-                </p>
-              </div>
-            </Col>
-            <Col xs="6">
-              <div className="photo">
-                <img src={avatar} alt="Kévin Barfleur" />
-              </div>
-            </Col>
-          </Row>
-        </div>
-      </React.Fragment>
+      <div className="ContactBackground">
+        <Row className="contactContent">
+          <Col className="contactContentElement" xs="6">
+            <div className="informations">
+              <TrackVisibility partialVisibility>
+                <TitleTracked />
+              </TrackVisibility>
+              <p>
+                <a
+                  className="important"
+                  href="https://kevinbarfleur.netlify.com"
+                >
+                  kevinbarfleur.netlify.com
+                </a>{' '}
+                <br />
+                <a href="https://github.com/kevinbarfleur">
+                  github.com/kevinbarfleur
+                </a>
+                <br />
+                <a href="https://codepen.io/kevin_barfleur">
+                  codepen.io/kevin_barfleur
+                </a>
+                <br />
+              </p>
+              <p className="me">
+                <a className="important" href="mailto:kevinbarfleur@gmail.com">
+                  kevinbarfleur@gmail.com
+                </a>{' '}
+                —{' '}
+                <a className="important" href="tel:+33768123058">
+                  0768.12.30.58
+                </a>{' '}
+                — 92160, Antony <br />
+                27 ans — Permis B.
+              </p>
+            </div>
+          </Col>
+          <Col className="contactContentElement" xs="6">
+            <div className="photo">
+              <img src={avatar} alt="Kévin Barfleur" />
+            </div>
+          </Col>
+        </Row>
+      </div>
     )
   }
 }
