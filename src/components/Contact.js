@@ -1,72 +1,95 @@
 import React, { Component } from 'react'
-import TrackVisibility from 'react-on-screen'
-import posed from 'react-pose'
 import { Row, Col } from 'reactstrap'
+import TrackVisibility from 'react-on-screen'
 
 // Styles
 import '../style/contact.scss'
 
-const ContactContainer = posed.div({
-  open: {
-    y: 0,
-    opacity: 1,
-    delayChildren: 500,
-    staggerChildren: 100,
-    delay: 100,
-    transition: {
-      duration: 1000
-    }
-  },
-  closed: { y: 20, opacity: 0 }
-})
+const avatar = require('../images/avatar.png')
 
-const ContactTile = posed.div({
-  open: { y: 0, opacity: 1 },
-  closed: { y: 20, opacity: 0 }
-})
+const TitleTracked = ({ isVisible }) => {
+  const titleHidden = {
+    transform: 'translateX(-50px)',
+    opacity: '0',
+    transition: '1s'
+  }
+  const titleVisible = {
+    transform: 'translateX(0px)',
+    opacity: '1',
+    transition: '1s'
+  }
+
+  const lineHidden = {
+    width: '0%',
+    transition: '2s'
+  }
+  const lineVisible = {
+    width: '35%',
+    transition: '2s'
+  }
+
+  const styleTitle = isVisible ? titleVisible : titleHidden
+  const styleLine = isVisible ? lineVisible : lineHidden
+
+  return (
+    <div className="contactTitle" style={styleTitle}>
+      <h2>Contact</h2>
+      <div className="Contactline" style={styleLine} />
+    </div>
+  )
+}
 
 class Contact extends Component {
   render() {
-    const ContactContent = (
-      <Row>
-        <Col xs="6">
-          <div className="Contactline" />
-          <h2>Contact</h2>
-          <p>
-            <a href="https://kevinbarfleur.netlify.com">
-              kevinbarfleur.netlify.com
-            </a>
-            <a href="https://github.com/kevinbarfleur">
-              github.com/kevinbarfleur
-            </a>
-            <a href="https://codepen.io/kevin_barfleur">
-              codepen.io/kevin_barfleur
-            </a>
-          </p>
-        </Col>
-        <Col xs="6">.col-6</Col>
-      </Row>
-    )
-
-    const ContactView = ({ isVisible }) => {
-      return isVisible ? (
-        <ContactContainer pose="open">
-          <ContactTile>
-            <div className="Contact">{ContactContent}</div>
-          </ContactTile>
-        </ContactContainer>
-      ) : (
-        <ContactContainer pose="closed">
-          <ContactTile>
-            <div className="Contact">{ContactContent}</div>
-          </ContactTile>
-        </ContactContainer>
-      )
-    }
-
     return (
       <React.Fragment>
-        <TrackVisibility partialVisibility>{ContactView}</TrackVisibility>
+        <div className="ContactBackground">
+          <Row className="contactContent">
+            <Col xs="6">
+              <div className="informations">
+                <TrackVisibility partialVisibility>
+                  <TitleTracked />
+                </TrackVisibility>
+                <p>
+                  <a
+                    className="important"
+                    href="https://kevinbarfleur.netlify.com"
+                  >
+                    kevinbarfleur.netlify.com
+                  </a>{' '}
+                  <br />
+                  <a href="https://github.com/kevinbarfleur">
+                    github.com/kevinbarfleur
+                  </a>
+                  <br />
+                  <a href="https://codepen.io/kevin_barfleur">
+                    codepen.io/kevin_barfleur
+                  </a>
+                  <br />
+                </p>
+                <p className="me">
+                  <a
+                    className="important"
+                    href="mailto:kevinbarfleur@gmail.com"
+                  >
+                    kevinbarfleur@gmail.com
+                  </a>{' '}
+                  —{' '}
+                  <a className="important" href="tel:+33768123058">
+                    0768.12.30.58
+                  </a>{' '}
+                  — 92160, Antony <br />
+                  27 ans — Permis B.
+                </p>
+              </div>
+            </Col>
+            <Col xs="6">
+              <div className="photo">
+                <img src={avatar} alt="Kévin Barfleur" />
+              </div>
+            </Col>
+          </Row>
+        </div>
       </React.Fragment>
     )
   }

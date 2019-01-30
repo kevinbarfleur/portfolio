@@ -44,6 +44,15 @@ class App extends Component {
             <Works windowWidth={this.state.windowWidth} />
             <Skills windowWidth={this.state.windowWidth} />
             <Contact />
+            <div className="copyright">
+              <p>
+                Développé avec{' '}
+                <span role="img" aria-label="coeur">
+                  ❤️
+                </span>{' '}
+                à Paris.
+              </p>
+            </div>
           </Col>
         </Row>
       </div>

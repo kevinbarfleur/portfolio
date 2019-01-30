@@ -68,6 +68,15 @@ body {
   -webkit-transform: translateX(-900px);
 }
 
+// --------- Copyright ----------
+
+.copyright {
+  width: 100vw;
+  text-align: center;
+  padding-top: 10%;
+  margin: auto;
+}
+
 // --------- Animations ---------
 
 @keyframes mainAppearance {

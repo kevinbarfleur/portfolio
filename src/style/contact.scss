@@ -1,6 +1,6 @@
 @import 'variables';
 
-.Contact {
+.ContactBackground {
   background: url('../images/overlay.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,7 +8,64 @@
   background-size: cover;
   width: 100vw;
   height: 500px;
-}
+  margin: auto;
 
-@keyframes contactAppearance {
+  .contactContent {
+    height: 100%;
+    display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .contactTitle {
+      h2 {
+        font-size: 3em;
+        font-weight: 900;
+
+        transform: translateX(40%);
+      }
+
+      .Contactline {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        // width: 35%;
+        height: 3px;
+        background-color: white;
+      }
+    }
+
+    .informations {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding-left: 20%;
+      color: white;
+
+      min-width: 375px;
+
+      a {
+        color: white;
+      }
+
+      a.important {
+        font-weight: 700;
+      }
+    }
+
+    .photo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      min-width: 375px;
+
+      img {
+        width: 300px;
+      }
+    }
+  }
 }
