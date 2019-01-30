@@ -4,6 +4,7 @@ import { Row, Col } from 'reactstrap'
 import About from './About'
 import Works from './Works'
 import Skills from './Skills'
+import Contact from './Contact'
 
 //styles
 import '../style/app.scss'
@@ -42,6 +43,7 @@ class App extends Component {
             <About />
             <Works windowWidth={this.state.windowWidth} />
             <Skills windowWidth={this.state.windowWidth} />
+            <Contact />
           </Col>
         </Row>
       </div>

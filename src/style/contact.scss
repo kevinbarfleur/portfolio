@@ -1,0 +1,14 @@
+@import 'variables';
+
+.Contact {
+  background: url('../images/overlay.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 500px;
+}
+
+@keyframes contactAppearance {
+}

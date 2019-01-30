@@ -5,10 +5,12 @@ import posed from 'react-pose'
 const WorksTilesContainer = posed.div({
   open: {
     x: '0%',
-    delayChildren: 400,
-    staggerChildren: 100
+    opacity: 1,
+    delayChildren: 600,
+    staggerChildren: 100,
+    delay: 100
   },
-  closed: { x: '-100%', delay: 100 }
+  closed: { x: '-100%', opacity: 0, delay: 100 }
 })
 
 const WorksTile = posed.div({

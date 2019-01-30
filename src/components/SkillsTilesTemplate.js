@@ -5,8 +5,9 @@ import posed from 'react-pose'
 const SkillsTilesContainer = posed.div({
   open: {
     x: '0%',
-    delayChildren: 400,
-    staggerChildren: 100
+    delayChildren: 600,
+    staggerChildren: 100,
+    delay: 100
   },
   closed: { x: '-100%', delay: 100 }
 })
