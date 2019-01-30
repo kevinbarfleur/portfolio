@@ -72,6 +72,13 @@
       a.important {
         font-weight: 700;
       }
+
+      a.resume {
+        color: black;
+        padding: 5px 10px;
+        background-color: white;
+        transition: 0.4s;
+      }
     }
 
     .photo {

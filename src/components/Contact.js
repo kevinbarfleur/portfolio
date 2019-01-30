@@ -5,6 +5,8 @@ import TrackVisibility from 'react-on-screen'
 // Styles
 import '../style/contact.scss'
 
+import resume from '../pdf/resume2019.pdf'
+
 const avatar = require('../images/avatar.png')
 
 const TitleTracked = ({ isVisible }) => {
@@ -53,18 +55,39 @@ class Contact extends Component {
                 <a
                   className="important"
                   href="https://kevinbarfleur.netlify.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   kevinbarfleur.netlify.com
                 </a>{' '}
                 <br />
-                <a href="https://github.com/kevinbarfleur">
+                <a
+                  href="https://github.com/kevinbarfleur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   github.com/kevinbarfleur
                 </a>
                 <br />
-                <a href="https://codepen.io/kevin_barfleur">
+                <a
+                  href="https://codepen.io/kevin_barfleur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   codepen.io/kevin_barfleur
                 </a>
-                <br />
+                <br /> <br />
+                <a
+                  className="resume"
+                  href={resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <b>
+                    Télécharger au format PDF <span>&#8594;</span>
+                  </b>
+                </a>{' '}
+                <br /> <br />
               </p>
               <p className="me">
                 <a className="important" href="mailto:kevinbarfleur@gmail.com">
