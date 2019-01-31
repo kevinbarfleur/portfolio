@@ -42,7 +42,7 @@ class WorksTilesTemplate extends Component {
                   </a>
                 </p>
                 <p>
-                  <span>○</span> Site personnel de Maëva Carriere - Jusriste.{' '}
+                  <span>○</span> Site personnel de Maëva Carriere - Juriste.{' '}
                   <br />○ Utilisation de React.js
                 </p>
                 <p>
@@ -69,8 +69,8 @@ class WorksTilesTemplate extends Component {
                 </p>
                 <p>
                   <span>○</span> Développement d’un microblog avec CMS intégré.{' '}
-                  <br />○ En développement, mobiles et tablettes non pris en
-                  charge. <br /> ○ Utilisation de React.js, Firebase, React
+                  <br />○ Projet en développement (mobiles et tablettes non pris
+                  en charge). <br /> ○ Utilisation de React.js, Firebase, React
                   Quill.
                 </p>
               </div>

@@ -106,7 +106,7 @@ class SkillsTilesTemplate extends Component {
                 Bases du versioning avec Git et Github :
               </p>
               <p>
-                <span>○</span> J’utilise principalement les commit et les push
+                <span>○</span> J’utilise principalement les Commit et les Push
                 pour sauvegarder et versionner mes projets. <br />{' '}
                 <span>○</span> Je n’ai pas encore eu l’occasion de travailler
                 avec les features de travail en équipe comme les Pull et les

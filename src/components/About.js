@@ -31,10 +31,10 @@ class About extends Component {
           <Col sm="12" md={{ size: 6, offset: 1 }}>
             <div className="intro">
               <p>
-                J’ai toujours été attiré par les ordinateurs, les jeux vidéo et
-                tout ce qui ce qui est synonyme d’innovation technologique. Le
-                Web a cependant quelque chose en plus qui a fait la différence :
-                l’importance du visuel.
+                J’ai toujours été attiré par l’innovation technologique. L’un
+                des aspects de l’innovation, le Web, a suscité mon intérêt en
+                raison de la place qu’il accorde depuis quelques années au
+                visuel.
               </p>
               <br />
               <p>
@@ -44,10 +44,9 @@ class About extends Component {
               </p>
               <br />
               <p>
-                Vous êtes désormais libre de parcourir ces deux pages sur
-                lesquelles je présente mes objectifs professionnels, un
-                échantillon des travaux que j’ai effectué ainsi que mes
-                compétences.
+                Aussi, je vous propose, ci-après, un état des lieux de mes
+                objectifs professionnels, des compétences que j’ai acquis mais
+                aussi un échantillon des travaux que j’ai effectué jusqu’ici.
               </p>
               <br />
             </div>
