@@ -32,7 +32,7 @@ class About extends Component {
             <div className="intro">
               <p>
                 J’ai toujours été attiré par l’innovation technologique. L’un
-                des aspects de l’innovation, le Web, a suscité mon intérêt en
+                des aspects cette innovation, le Web, a suscité mon intérêt en
                 raison de la place qu’il accorde depuis quelques années au
                 visuel.
               </p>
