@@ -7,10 +7,9 @@ const WorksTilesContainer = posed.div({
     x: '0%',
     opacity: 1,
     delayChildren: 600,
-    staggerChildren: 100,
-    delay: 100
+    staggerChildren: 100
   },
-  closed: { x: '-100%', opacity: 0, delay: 100 }
+  closed: { x: '-100%', opacity: 0 }
 })
 
 const WorksTile = posed.div({
