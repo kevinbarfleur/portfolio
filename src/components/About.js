@@ -45,8 +45,8 @@ class About extends Component {
               <br />
               <p>
                 Aussi, je vous propose, ci-après, un état des lieux de mes
-                objectifs professionnels, des compétences que j’ai acquis mais
-                aussi un échantillon des travaux que j’ai effectué jusqu’ici.
+                objectifs professionnels, des compétences que j’ai acquise mais
+                aussi un échantillon des travaux que j’ai effectués jusqu’ici.
               </p>
               <br />
             </div>

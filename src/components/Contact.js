@@ -54,11 +54,11 @@ class Contact extends Component {
               <p>
                 <a
                   className="important"
-                  href="https://kevinbarfleur.netlify.com"
+                  href="https://kevinbarfleur.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  kevinbarfleur.netlify.com
+                  kevinbarfleur.com
                 </a>{' '}
                 <br />
                 <a
