@@ -47,10 +47,8 @@ class App extends Component {
             <div className="copyright">
               <p>
                 Développé avec{' '}
-                <span role="img" aria-label="coeur">
-                  ❤️
-                </span>{' '}
-                à Paris.
+                <i style={{ color: '#f44336' }} class="far fa-heart" /> and{' '}
+                <i style={{ color: '#2196f3' }} class="fab fa-react" />
               </p>
             </div>
           </Col>
