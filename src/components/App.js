@@ -47,7 +47,7 @@ class App extends Component {
             <div className="copyright">
               <p>
                 Développé avec{' '}
-                <i style={{ color: '#f44336' }} class="far fa-heart" /> and{' '}
+                <i style={{ color: '#f44336' }} class="far fa-heart" /> et{' '}
                 <i style={{ color: '#2196f3' }} class="fab fa-react" />
               </p>
             </div>
