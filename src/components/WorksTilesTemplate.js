@@ -59,18 +59,17 @@ class WorksTilesTemplate extends Component {
                 </p>
                 <p>
                   <a
-                    href="https://kevinbarfleur.github.io/blog-template"
+                    href="https://kskfdev.netlify.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    kevinbarfleur.github.io/blog-template
+                    kskfdev.netlify.com
                   </a>
                 </p>
                 <p>
-                  <span>○</span> Développement d’un microblog avec CMS intégré.{' '}
-                  <br />○ Projet en développement (mobiles et tablettes non pris
-                  en charge). <br /> ○ Utilisation de React.js, Firebase, React
-                  Quill.
+                  <span>○</span> Développement d’un site pour le club de Kung Fu
+                  KSKF. <br />○ Projet en développement. <br /> ○ Utilisation de
+                  React.js, React Router et Gatsby pour la partie blog.
                 </p>
               </div>
             </WorksTile>
