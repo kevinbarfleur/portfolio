@@ -97,7 +97,7 @@ class Contact extends Component {
                 <a className="important" href="tel:+33768123058">
                   0768.12.30.58
                 </a>{' '}
-                — 92160, Antony <br />
+                — 77185, Lognes <br />
                 27 ans — Permis B.
               </p>
             </div>

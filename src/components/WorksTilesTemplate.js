@@ -41,8 +41,8 @@ class WorksTilesTemplate extends Component {
                   </a>
                 </p>
                 <p>
-                  <span>○</span> Site personnel de Maëva Carriere - Juriste.{' '}
-                  <br />○ Utilisation de React.js
+                  <span>○</span> Site personnel (vitrine) de Maëva Carriere -
+                  Juriste. <br />○ Utilisation de React.js
                 </p>
                 <p>
                   <a
