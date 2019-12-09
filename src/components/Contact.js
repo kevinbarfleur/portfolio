@@ -97,8 +97,8 @@ class Contact extends Component {
                 <a className="important" href="tel:+33768123058">
                   0768.12.30.58
                 </a>{' '}
-                — 77185, Lognes <br />
-                27 ans — Permis B.
+                — Paris <br />
+                28 ans — Permis B.
               </p>
             </div>
           </Col>
